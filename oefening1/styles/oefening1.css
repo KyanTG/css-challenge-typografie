@@ -4,13 +4,13 @@
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  /* regular / 400 */
-
+font-family: "Blokje-1";
+src:url(../fonts/ExpletusSans-Regular.ttf)
 }
 
 @font-face {
-  /* bold / 700 */
-
+  font-family: "Blokje-1-Bold";
+src:url(../fonts/ExpletusSans-Bold.ttf)
 }
 
 
@@ -21,12 +21,15 @@ li:first-of-type {
 
 li:first-of-type h2 {
   /* JOUW CODE HIER */
+  font-family: "Blokje-1-Bold";
   
 
 }
 
 li:first-of-type p {
-  /* JOUW CODE HIER */
+  font-family: "Blokje-1";
+  line-height: 120%;
+  font-size: 12px;
   
 
 }
@@ -34,7 +37,8 @@ li:first-of-type p {
 /* hiermee selecteer je de eerste letter van de p in het eerste blokje */
 li:first-of-type p::first-letter {
   /* JOUW CODE HIER */
-
+font-family: "Blokje-1-Bold";
+font-size: 30px;
   
 }
 
@@ -48,7 +52,8 @@ li:first-of-type p::first-letter {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+  font-family: "Blokje-2";
+  src: url(../fonts/Montserrat-Thin.ttf);
 }
 
 
@@ -70,8 +75,17 @@ li:nth-of-type(2) {
 }
 
 li:nth-of-type(2) h2 {
+  font-family: "Blokje-2";
+  font-size: 2.5em;
+  font-weight: 100;
+  line-height: 80%;
+  text-transform: uppercase;
   margin:0;
   color:var(--color);
+  text-shadow: 0em 0em .1em var(--shadow), 
+               0em 0em .2em var(--shadow), 
+               0em 0em .3em var(--shadow);
+  
 
   /* JOUW CODE HIER */
 
@@ -89,6 +103,8 @@ li:nth-of-type(2) h2 {
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
   
+  font-family: "Blokje-3";
+  src: url(../fonts/Saira_Condensed-Bold.ttf);
 }
 
 li:nth-of-type(3) {
@@ -98,12 +114,26 @@ li:nth-of-type(3) {
   --shadow:rgb(0 0 0 / .75);
 
   /* JOUW CODE HIER */
-  
-
+  display:grid;
+  grid-auto-columns:min-content;  
+  place-content:center;
+  text-align:center;
+  background-color: var(--background);
 }
 
 li:nth-of-type(3) h2 {
   /* JOUW CODE HIER */
+  font-family: "Blokje-3";
+  color: var(--color);
+  font-size: 2.5em;
+  font-weight: 100;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transform: skewY(-10deg);
+  margin:0;
+  color:var(--color);
+  text-shadow: 0.1em 0.1em var(--shadow);
 
   
 }
